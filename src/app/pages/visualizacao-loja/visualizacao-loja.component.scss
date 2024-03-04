@@ -1,0 +1,90 @@
+body {
+    color: rgba(0, 0, 0, .8);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #fff;
+    justify-content: center;
+}
+
+.card {
+    padding: 8px;
+    border: 2px solid rgba(81, 88, 112, .4);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+
+    &:hover {
+        border-color: #B35FD0;
+        transition: .5s;
+    }
+}
+#img-perfil {
+    border-radius: 100%;
+    border: 8px solid #cccccc67;
+}
+
+#banner {
+    position: relative;
+    display: flex;
+    border-radius: 2%;
+    border: 8px solid #cccccc67;
+}
+.card:hover {
+    border-color: #B35FD0;
+}
+
+#volunteers {
+    padding: 7px;
+    display: flex;
+    color: #B35FD0;
+}
+#volunteers ul i {
+    font-size: 1.6rem; 
+    margin-right: 2px;
+    margin-left: 3px;
+    justify-content: center;
+}
+.black-icon {
+    color: black;
+    justify-content: center;
+
+  }
+
+.product-price {
+    display: flex;
+    flex-direction: row;
+    margin-top: 4px;
+    align-items: center;
+}
+ 
+.card ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+.card i {
+    font-size: 18px;
+    line-height: 28px;
+}
+ 
+@media (min-width: 1024px) {
+
+}
+ 
+.empty-icon {
+    margin: 8px;
+}
+ 
+#img-content{
+    text-align: center;
+}
+#volunteers i {
+    font-size: 1.7rem; 
+    margin-right: 2px;
+    margin-left: 3px;
+    
+}

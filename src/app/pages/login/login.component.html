@@ -1,0 +1,26 @@
+
+<div class="flex flex-col items-center justify-self-center w-full mr-8">
+        <div class="login-container text-left mt-12 p-8">
+            <div class="login-title items-center flex justify-center mr-8 mb-10">
+                <la-icon icon="user-circle" class="la-3x"></la-icon>
+                <h2 class="login-text text-5xl text-[#B35FD0]">Login</h2>
+            </div>
+            <form class="login-form flex flex-col" nz-form [formGroup]="loginForm">
+                
+                <label class="email-write" for="username">E-mail</label>
+                <input class="email-box box-border text-black" type="text" id="user-email" name="username" nz-input formControlName="email">
+    
+                <label class="password-write" for="password">Senha</label>
+                <input class="password-box text-black" type="password" id="user-password" name="password" nz-input formControlName="password">
+    
+                <!-- <div class="forgot-password text-right underline underline-offset-2 text-purple-900 mb-8"><a
+                        href="#">Esqueci
+                        minha senha</a></div> -->
+                <button (click)="submit()" id="login-button" type="button">Login</button>
+                <p class="signup-link text-center text-black">Não tem cadastro? 
+                    <a [routerLink]="['../user-register']" class="underline underline-offset-2 text-purple-900">Cadastre-se!</a>
+                </p>
+                        
+            </form>
+    </div>
+</div>

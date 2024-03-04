@@ -1,0 +1,115 @@
+ <div class="profile-container p-5 text-center">
+        <div class="flex-col my-8 text-purple-900">
+            <p class="text-3xl">Editar Perfil:</p>
+        </div>
+        <div class="cellphone lg:hidden">
+            <div class="profile-header flex flex-col items-center">
+                <div class="profile-image-container">
+                    <div
+                        class="profile-image rounded-full w-[150px] h-[150px] flex h-14 bg-gradient-to-r from-violet-500 to-fuchsia-500">
+                    </div>
+                    <i id="edit" class="las la-pen text-4xl"></i>
+                </div>
+            </div>
+            <div class="profile-details">
+                <form nz-form [formGroup]="formGroup" class="profile-form mt-5 flex flex-col">
+                    <label for="name">Nome</label>
+                    <input nz-input formControlName="name" type="text" id="mobile-name" name="name">
+
+                    <label for="cep">CEP</label>
+                    <input nz-input formControlName="cep" id="mobile-cep" name="cep">
+
+                    <label for="email">Email</label>
+                    <input nz-input formControlName="email" type="email" id="mobile-email" name="email">
+                </form>
+            </div>
+            <div class="items-center flex flex-col">
+                <div class="border-b-4 p-2 ">
+                    <p class="mt-9 text-xl">Formas de pagamento:</p>
+                </div>
+                    <p [routerLink]="['../payment-method']" class="my-4 text-left underline underline-offset-2 cursor-pointer text-purple-900"> Adicionar
+                        cartão
+                        +</p>
+                <div class="pay-picture w-[150px] h-[150px] bg-[#cccccc67] rounded text-center pt-4">
+                    <la-icon icon="credit-card" class="text-4xl mt-5"></la-icon>
+                    <div class="text-left ml-5">
+                        <p>Mastercard</p>
+                        <p>********6045</p>
+                    </div>
+                    <p class="underline underline-offset-2 text-lg cursor-pointer">Editar</p>
+                </div>
+
+                <div class="add-store">
+                    <div class="border-b-4 p-2">
+                        <p class="mt-9 text-xl">Suas Lojas:</p>
+                    </div>
+                    <p [routerLink]="['../store-register']" class="my-4 underline underline-offset-2 cursor-pointer text-purple-900">Adicionar Loja +</p>
+                    <div
+                        class="store-picture rounded-full w-[150px] h-[150px] bg-gradient-to-r from-violet-500 to-fuchsia-500">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pc hidden lg:flex justify-center flex-col">
+            <div class="profile-container p-5 text-center flex flex-row justify-center">
+                <div>
+                    <form nz-form [formGroup]="formGroup" class="profile-form mt-5 flex flex-col w-[452px]">
+                        <label class="text-left" for="name">Nome</label>
+                        <input nz-input formControlName="name" type="text" id="pc-name" name="name">
+
+                        <label class="text-left" for="cep">CEP</label>
+                        <input nz-input formControlName="cep" id="pc-cep" name="cep">
+
+                        <label class="text-left" for="email">Email</label>
+                        <input nz-input formControlName="email" type="email" id="pc-email" name="email">
+                    </form>
+
+                    <div class="items-center mt-16">
+                        <p class="text-xl text-left">Formas de pagamento:</p>
+                        <p [routerLink]="['../payment-method']"
+                            class="my-4 text-left underline underline-offset-2 cursor-pointer text-purple-900 justify-center">
+                            Adicionar
+                            cartão +</p>
+                        <div class="flex border-y-4 py-8">
+                            <div class="pay-picture w-[150px] h-[150px] bg-[#cccccc67] rounded text-center pt-4">
+                                <la-icon icon="credit-card" class="text-4xl mt-5"></la-icon>
+                                <div class="text-left ml-5">
+                                    <p>Mastercard</p>
+                                    <p>********6045</p>
+                                </div>
+                                <p class="underline underline-offset-2 text-lg cursor-pointer">Editar</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="justify-center ml-32">
+                    <div class="profile-header flex items-center mt-16 mb-4">
+                        <div class="profile-image-container">
+                            <label for="edit">
+                                <div
+                                    class="store-picture rounded-full w-[220px] h-[220px] flex h-14 bg-gradient-to-r from-violet-500 to-fuchsia-500">
+                                </div>
+                            </label>
+
+                            <la-icon icon="pen" id="edit" class="text-4xl"></la-icon>
+                        </div>
+                    </div>
+                    <div class="add-store flex flex-col">
+                        <p class="mt-14 text-xl text-left">Suas Lojas:</p>
+                        <label [routerLink]="['../store-register']" class="underline underline-offset-2 text-purple-900 cursor-pointer flex my-4 text-center"
+                            for="add-store-plus">Adicionar Loja +</label>
+                        <div class="flex border-y-4 py-8">
+                            <div
+                                class="store-picture rounded-full w-[150px] h-[150px] bg-gradient-to-r from-violet-500 to-fuchsia-500">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="save-button">
+            <button id="save-button-desktop" class="purple-button my-8 w-[300px]" type="button"
+                (click)="submit()">Salvar</button>
+        </div>
+    </div>

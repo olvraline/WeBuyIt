@@ -1,0 +1,167 @@
+
+  <nav class="w-screen text text-center bg-[#414881] hidden md:flex lg:flex justify-center">
+    <ul class="flex justify-between list-none mx-[240px] text-white" id="container-menu">
+    </ul>
+  </nav>
+
+  <div class="main-div h-100vh lg:mx-[360px]  relative ">
+    <div class="max-w-[1120px] max-h-[340px] mt-10">
+      <img id= banner class="w-screen  md:w-full md:h-full xl:w-full  " src="./assets/images/perfil-loja/capa-perfil-loja.png">
+    </div>
+    <img id=img-perfil class=" -mt-20 absolute xl:-mt-28 ml-12 xl:mb-12S xl:absolute h-36 xl:h-[200px] "
+      src="./assets/images/perfil-loja/logo-perfil-loja.png" alt="">
+
+    <div class="titulo-endereco mt-20 mx-8  md:mt-12 md:py-8 md:mx-36 md:relative lg:mx-0">
+
+      <h1 class="font-bold text-2xl mt-4 p-2 font-bold">Gira Discos </h1>
+      <h2>
+      A "Gira Discos" é mais do que uma loja de vinis localizada no coração de Gaspar, é um refúgio para os amantes da
+      música
+      analógica. Situada em um espaço acolhedor, a loja oferece uma extensa coleção de vinis, abrangendo diversos
+      gêneros musicais. Cada vinil conta uma história única, e as paredes decoradas com capas icônicas proporcionam uma
+      atmosfera nostálgica. Com uma equipe apaixonada, a Gira Discos oferece não apenas discos, mas uma experiência
+      musical autêntica. Seja você um colecionador experiente ou um entusiasta iniciante, a Gira Discos é o destino
+      perfeito para explorar e celebrar a riqueza sonora dos vinis.
+      A equipe da Gira Discos é apaixonada por música e está sempre pronta para ajudar os clientes a explorar seu vasto
+      acervo de vinis. Seja você um aficionado por clássicos do rock, um apreciador de jazz suave ou um entusiasta da
+      música eletrônica, a loja oferece uma ampla variedade de gêneros e artistas.
+      Além de vinis, a Gira Discos também oferece acessórios relacionados, como agulhas de alta qualidade, capas
+      protetoras e equipamentos de áudio especializados. Os clientes podem contar com o conhecimento e a paixão da
+      equipe para orientá-los na escolha do vinil perfeito ou no aprimoramento do seu sistema de som.
+    </h2>
+    </div>
+
+
+
+    <div id="address" class="icone-endereco mx-6 xl:mx-2 mt-2 flex items-start">
+      <i class="las la-store-alt font-bold la-3x"></i>
+      <p class="text-xs font-bold xl:mx-0 p-4">SC, Gaspar, Santa Teresinha, R. Barão do Rio Branco, 13 </p>
+    </div>
+
+
+    <div id="add-product" class="adicionar-produto mx-6 xl:mx-2 mt-10 flex items-start">
+      <h2 [routerLink]="['../anuncio']" class="font-bold xl:mb-4 cursor-pointer">Adicionar Produto +</h2>
+    </div>
+
+
+    <div id="container" class="flex grid grid-cols-2 p-2 gap-4 lg:grid-cols-4">
+
+      <div div class="card border-2 p-2 flex flex-col rounded-2xl  hover:border-violet-300" id="modelo">
+        <img src="./assets/images/perfil-loja/abba-dez-anos-vinil.jpg" alt="abba-dez-anos-vinil" class="imagem-produto">
+
+        <h1 class="text-md mt-2 p-2 font-bold">
+          ABBA Gold LP CD
+        </h1>
+
+        <div class="md:flex flex-col md:justify-between">
+          <div class="text-1xl md:text-2xl mt-1 font-bold text-[#B35FD0] line-through">R$ 150
+          </div>
+          <div class="product-price-card flex">
+            <div class="text-2xl lg:text-3xl font-bold text-black">R$ 130 </div>
+            <span class="text-md mt-2 ml-1 font-bold">00</span>
+            <span class="ml-4 text-[#B35FD0] text-xl font-bold">-15%</span>
+          </div>
+          <div class="text-md my-1">em 10x R$ 13</div>
+        </div>
+        <div class=" p-2 flex flex-col" id="volunteers">
+          <ul>
+            <i class="las la-user"></i>
+            <i class="las la-user"></i>
+            <i class="las la-user black-icon"></i>
+            <i class="las la-user black-icon"></i>
+            <i class="las la-user black-icon"></i>
+
+          </ul>
+        </div>
+      </div>
+
+      <div div class="card border-2 p-2 flex flex-col rounded-2xl  hover:border-violet-300" id="modelo">
+        <img src="./assets/images/perfil-loja/bee-gees-love-hits.jpg" alt="bee-gees-love-hits-vinil"
+          class="imagem-produto">
+
+        <h1 class="text-md mt-2 font-bold">
+          Bee Gees Love Hits Vinil
+        </h1>
+
+        <div class="md:flex flex-col md:justify-between">
+          <div class="text-1xl md:text-2xl mt-1 font-bold text-[#B35FD0] line-through">R$ 80
+          </div>
+          <div class="product-price-card flex">
+            <div class="text-2xl lg:text-3xl font-bold text-black">R$ 60 </div>
+            <span class="text-md mt-2 ml-1 font-bold">00</span>
+            <span class="ml-4 text-[#B35FD0] text-xl font-bold">-25%</span>
+          </div>
+          <div class="text-md my-1">em 10x R$ 13</div>
+        </div>
+        <div class=" p-2 flex flex-col" id="volunteers">
+          <ul>
+            <i class="las la-user"></i>
+            <i class="las la-user"></i>
+            <i class="las la-user"></i>
+            <i class="las la-user"></i>
+            <i class="las la-user black-icon"></i>
+
+          </ul>
+        </div>
+      </div>
+
+      <div class="card border-2 p-2 flex flex-col rounded-2xl  hover:border-violet-300" id="modelo">
+        <img src="./assets/images/perfil-loja/a-ha-stay-on-these-roads.jpg" alt="a-ha-stay-on-these-roads-vinil"
+          class="imagem-produto">
+
+        <h1 class="text-md mt-2 font-bold">
+          A-ha Stay On These Roads
+        </h1>
+
+        <div class="md:flex flex-col md:justify-between">
+          <div class="text-1xl md:text-2xl mt-1 font-bold text-[#B35FD0] line-through">R$ 150
+          </div>
+          <div class="product-price-card flex">
+            <div class="text-2xl lg:text-3xl font-bold text-black">R$ 130 </div>
+            <span class="text-md mt-2 ml-1 font-bold">00</span>
+            <span class="ml-4 text-[#B35FD0] text-xl font-bold">-15%</span>
+          </div>
+
+          <div class="text-md my-1">em 10x R$ 13</div>
+        </div>
+        <div class=" p-2 flex flex-col" id="volunteers">
+          <ul>
+            <i class="las la-user"></i>
+            <i class="las la-user black-icon"></i>
+            <i class="las la-user black-icon"></i>
+            <i class="las la-user black-icon"></i>
+            <i class="las la-user black-icon"></i>
+
+          </ul>
+        </div>
+      </div>
+
+
+      <div class="card border-2 p-2 flex flex-col rounded-2xl  hover:border-violet-300" id="modelo">
+        <img src="./assets/images/perfil-loja/lp-dois.png" alt="" class="rounded-lg w-full  ">
+
+        <h1 class="text-sm mt-3 font-bold">
+          Sepultura - Beneath The Remains (1989)
+        </h1>
+        <div class="md:flex flex-col md:justify-between">
+          <div class="text-1xl md:text-2xl mt-1 font-bold text-[#B35FD0] line-through">R$ 150
+          </div>
+          <div class="product-price-card flex">
+            <div class="text-2xl lg:text-3xl font-bold text-black">R$ 135 </div>
+            <span class="text-md mt-2 ml-1 font-bold">00</span>
+            <span class="ml-4 text-[#B35FD0] text-xl font-bold">-10%</span>
+          </div>
+          <div class="text-md my-1">em 6x R$ 22,50</div>
+        </div>
+        <div class=" p-2 flex flex-col" id="volunteers">
+          <ul>
+            <i class="las la-user"></i>
+            <i class="las la-user"></i>
+            <i class="las la-user"></i>
+            <i class="las la-user black-icon"></i>
+            <i class="las la-user black-icon"></i>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>

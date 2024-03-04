@@ -1,0 +1,35 @@
+.login-form label {
+    font-size: 20px;
+    color: #000000;
+    margin-top: 20px;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 16px;
+    margin: 8px 0;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    transition: border-color 0.3s;
+    font-size: 20px;
+    background-color: #cccccc67;
+    border-radius: 5px;
+}
+
+.login-form input:focus {
+    border-color: #8e44ad;
+    outline: none;
+}
+
+.login-form button {
+    background: linear-gradient(99deg, rgba(137, 67, 203, 0.71) 0%, rgba(204, 71, 225, 0.69) 56.77%, rgba(137, 69, 204, 0.70) 98.96%, rgba(230, 34, 234, 0.70) 98.97%);
+    color: #fff;
+    width: 100%;
+    padding: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 24px;
+    margin-top: 20px;
+    border-radius: 5px;
+    height: 100%;
+}

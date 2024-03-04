@@ -1,0 +1,82 @@
+
+    <div class="container">
+        <h1>O que você está anunciando?</h1>
+        <form [formGroup]="formGroup">
+            <!-- Título do Anúncio -->
+            <div>
+                <nz-form-control nzErrorTip="Digite o titulo do produto">
+                <label for="titulo">Título:</label>
+                <input formControlName="name" type="text" id="titulo" name="titulo"  placeholder="Coloque o titulo do anuncio">
+                </nz-form-control>
+            </div>
+
+            <!-- Descrição do Anúncio -->
+            <div>
+                <label for="descricao">Descrição:</label>
+                <nz-form-control>
+                <textarea formControlName="description" id="descricao" name="descricao" rows="4"
+                placeholder="Descreva seu Anúncio"></textarea>
+                </nz-form-control>
+            </div>
+
+            <!-- Categorias -->
+            <div class="categoria-button">                
+                <label>Categorias:</label>
+                <div>
+                        <mat-button-toggle-group formControlName="category_id" class="categoria-button-toggle">
+                            <mat-button-toggle  class="button-toggle" value="1">Para sua casa</mat-button-toggle>
+                            <mat-button-toggle  class="button-toggle" value="2">Eletrônicos</mat-button-toggle>
+                            <mat-button-toggle  class="button-toggle" value="3">Música e Hobbies</mat-button-toggle>
+                            <mat-button-toggle  class="button-toggle" value="4">Esportes e Lazer</mat-button-toggle>
+                            <mat-button-toggle  class="button-toggle" value="5">Animais de Estimação</mat-button-toggle>
+                            <mat-button-toggle  class="button-toggle" value="6">Artigos Infantis</mat-button-toggle>
+                            <mat-button-toggle  class="button-toggle" value="7">Comércio e Escritório</mat-button-toggle>
+                            <mat-button-toggle  class="button-toggle" value="8">Produtos de Beleza</mat-button-toggle>
+                        </mat-button-toggle-group>
+                </div>
+            </div>
+            <!-- Caixas de texto -->
+            <div>
+                <div  id="Tipo">
+                    <!-- Tipo-->
+                    <label for="tipo">Tipo:</label>
+                    <nz-form-control><input placeholder="Especifique o tipo do Anúncio" formControlName="type" type="text" id="tipo" name="tipo"></nz-form-control> 
+                    
+                </div>
+                <div>
+                    <!-- Valor -->
+                    <label for="valor">Valor:</label>
+                    <nz-form-control><input placeholder="Valor do Produto" formControlName="price" type="text" id="valor" name="valor"></nz-form-control>
+                </div>
+                    <!-- Quantidade de Voluntários -->
+                    <div class="Quantidade-Voluntario">
+                     <label for="quantidadeVoluntarios">Quantidade de
+                        Voluntários:</label>
+                    <nz-form-control><input placeholder="Digite a quantidade minima de Voluntários" formControlName="buyers" type="text" id="quantidadeVoluntarios" name="quantidadeVoluntarios"
+                        ></nz-form-control>
+                    </div>
+                    <div>
+                        <label for="descontoVoluntarios" >Desconto por
+                           Voluntário:</label>
+                       <nz-form-control><input placeholder="Digite o desconto para cada voluntário" formControlName="discount" type="text"  name="descontoVoluntarios"
+                           ></nz-form-control>
+                       </div>
+            </div>
+            <!--Botão Upload Imagem-->
+            <div>
+                <nz-upload
+                  nzAction="https://localhost:7191/file/Upload" [nzMultiple]="true"
+                  [nzHeaders]="{ authorization: '' }"
+                  (nzChange)="handleChange($event)"       >
+                  <button class="button-upload" nz-button>
+                    <i nz-icon nzType="upload"></i>
+                    Carregue a imagem do anuncio
+                  </button>
+                </nz-upload>
+            </div>
+
+            <!-- Botão de Envio -->
+            <button id="submit1" class="submit1" nz-button nzType="primary" (click)="submit()">Cadastrar Anúncio</button>
+            
+        </form>
+    </div>

@@ -1,0 +1,102 @@
+<header id="header" class="w-screen flex p-2 sm:p-2 lg:p-4 border-collapse items-center justify-center">
+    <div id="header-content" class="container flex justify-between items-center mx-[16px] lg:mx-[240px]">
+        <span id="header-logo" [routerLink]="['home']" class="flex cursor-pointer items-center">
+            <img class="hidden lg:flex mr-2 pb-2 lg:h-20" src="./assets/images/header/we_buy_it_bag_logo.png"
+                alt="WeBuyIt logo">
+            <img class="flex lg:mr-8 h-10 lg:h-14 mb-1" src="./assets/images/header/we_buy_it_logo.png"
+                alt="WeBuyIt title">
+        </span>
+        <div id="header-search-bar" class="bg-white items-center mx-8 hidden sm:flex lg:flex">
+            <input id="header-search-bar-input" class="flex m-4 placeholder:opacity-50 focus:outline-none" type="text"
+                placeholder="Pesquisar">
+            <la-icon [routerLink]="['search']" icon="search" class="flex m-4 text-[#1d224d] cursor-pointer"></la-icon>
+        </div>
+        <div id="header-icons" class="flex items-center">
+            <la-icon [routerLink]="['search']" icon="search" class="flex la-2x lg:la-3x mx-4 sm:hidden lg:hidden text-[#1d224d]"></la-icon>
+            <la-icon [routerLink]="['cart']" icon="shopping-cart" class="la-3x mx-4 hidden sm:flex lg:flex cursor-pointer text-[#1d224d]"></la-icon>
+            <la-icon icon="bell" class="la-3x hidden mx-4 sm:flex lg:flex cursor-pointer text-[#1d224d]"></la-icon>
+
+            <la-icon [routerLink]="['login']" icon="user-circle" class="mt-2 la-3x lg:mx-4 cursor-pointer text-[#1d224d]"></la-icon>
+        </div>
+    </div>
+</header>
+<nav class="w-screen text-center bg-[#414881] hidden md:flex lg:flex justify-center">
+    <ul class="flex justify-between list-none mx-[240px] text-white" id="container-menu">
+        <li class="hover:bg-[#3C4378] rounded-lg">
+            <a href="#" class="hover:text-yellow-400">Categorias</a>
+            <div class="sub-menu">
+                <ul class="block">
+                    <li> <a href="#"> Viagem </a> </li>
+                    <li> <a href="#"> Camping </a> </li>
+                    <li> <a href="#"> Praia </a> </li>
+                    <li> <a href="#"> Pesca </a> </li>
+                    <li> <a href="#"> Serviços </a> </li>
+                </ul>
+            </div>
+        </li>
+
+        <li class="hover:bg-[#3C4378] rounded-lg"> <a href="#" class="hover:text-yellow-400">Eletrônicos</a>
+            <div class="sub-menu">
+                <ul class="block">
+                    <li> <a href="#"> Tv </a> </li>
+                    <li> <a href="#"> Celular </a> </li>
+                    <li> <a href="#"> Home-Theater </a> </li>
+                    <li> <a href="#"> Monitor </a> </li>
+                    <li> <a href="#"> Notebook</a> </li>
+                </ul>
+            </div>
+
+
+        </li>
+
+        <li class="hover:bg-[#3C4378] rounded-lg"> <a href="#" class="hover:text-yellow-400">Livros</a>
+            <div class="sub-menu">
+                <ul class="block">
+                    <li> <a href="#"> Ficção </a> </li>
+                    <li> <a href="#"> Drama </a> </li>
+                    <li> <a href="#"> Romance </a> </li>
+                    <li> <a href="#"> Policial </a> </li>
+                    <li> <a href="#"> Clássicos</a> </li>
+                </ul>
+            </div>
+
+        </li>
+
+        <li class="hover:bg-[#3C4378] rounded-lg"> <a href="#" class="hover:text-yellow-400">Games</a>
+            <div class="sub-menu">
+                <ul class="block   ">
+                    <li> <a href="#"> Playstation 5 </a> </li>
+                    <li> <a href="#"> Xbox One </a> </li>
+                    <li> <a href="#"> Nintendo Switch </a> </li>
+                    <li> <a href="#"> Playstation 4 </a> </li>
+                    <li> <a href="#"> Periféricos</a> </li>
+                </ul>
+            </div>
+
+        </li>
+
+        <li class="hover:bg-[#3C4378] rounded-lg"> <a href="#" class="hover:text-yellow-400">Casa</a>
+            <div class="sub-menu">
+                <ul class="block  ">
+                    <li> <a href="#"> Mesa </a> </li>
+                    <li> <a href="#"> Banho </a> </li>
+                    <li> <a href="#"> Toalha </a> </li>
+                    <li> <a href="#"> Tapetes </a> </li>
+                    <li> <a href="#"> Cortinas</a> </li>
+                </ul>
+            </div>
+
+        </li>
+
+        <li [routerLink]="['home']" class="hover:text-yellow-400 cursor-pointer">Ofertas
+
+
+        </li>
+
+        <li [routerLink]="['anuncio']" class="hover:text-yellow-400 cursor-pointer"> Vender
+
+
+        </li>
+
+    </ul>
+</nav>

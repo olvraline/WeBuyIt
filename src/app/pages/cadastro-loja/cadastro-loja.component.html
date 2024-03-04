@@ -1,0 +1,101 @@
+    <div id="formulário">
+        <div id="cadastro">
+            <h1 class = "font-bold text-2xl mt-2 p-2 font-bold">Cadastro de Loja</h1>
+        </div>
+        <form id="form1" [formGroup]="formGroup" (ngSubmit)="onSubmit()">
+            <div>
+                    <div class="content flex item-center justify-center" style="margin-bottom: 100px;">
+                        <div id="banner">
+                            <img id="capa" src="./assets/images/fotos_capa_loja/capa_2.png" alt="banner">
+                            <img id="img-perfil" src="./assets/images/fotos_capa_loja/foto_perfil.png" alt="perfil">
+                        </div>
+                    </div>
+                <div>
+                    <label nzRequired nzFor="Name" class="w-80">Nome</label>
+                    <nz-form-control nzErrorTip="Preencha o Nome!">
+                        <input formControlName="Name" type="text" id="Name" placeholder="Insira nome da Loja">
+                    </nz-form-control>
+                </div>
+                <div>
+                    <label nzRequired nzFor="Description">Descrição</label>
+                    <nz-form-control nzErrorTip="Preencha a Descrição!">
+                        <textarea formControlName="Description" id="Description" rows="5"
+                            placeholder="Descreva sua Loja"></textarea>
+                    </nz-form-control>
+                </div>
+                <div>
+                    <div class="flex justify-between items-center">
+                        <label nzRequired nzFor="Cep">CEP</label>
+                        <a id="buscar-cep" href="https://buscacepinter.correios.com.br/app/endereco/index.php">Não sei
+                            meu CEP</a>
+                    </div>
+                    <nz-form-control nzErrorTip="Preencha o campo CEP!">
+                        <input formControlName="Cep" type="text" id="Cep" placeholder="XXXXX-XXX">
+                    </nz-form-control>
+                </div>
+                <div>
+                    <label nzRequired nzFor="State">Estado</label>
+                    <nz-form-control nzErrorTip="Preencha o Estado!">
+                        <input formControlName="State" type="text" id="State" placeholder="Insira seu Estado">
+                    </nz-form-control>
+                </div>
+                <div>
+                    <div>
+                        <label nzRequired nzFor="City">Cidade</label>
+                        <nz-form-control nzErrorTip="Preencha a Cidade!">
+                            <input formControlName="City" type="text" id="City" placeholder="Insira sua Cidade">
+                        </nz-form-control>
+                    </div>
+                </div>
+                <div>
+                    <label nzRequired nzFor="District">Bairro</label>
+                    <nz-form-control nzErrorTip="Preencha o Bairro!">
+                        <input formControlName="District" type="text" id="District" placeholder="Insira seu Bairro">
+                    </nz-form-control>
+                </div>
+                <div>
+                    <label nzRequired nzFor="Street">Rua</label>
+                    <nz-form-control nzErrorTip="Preencha a Rua!">
+                        <input formControlName="Street" type="text" id="Street" placeholder="Insira a Rua da Loja">
+                    </nz-form-control>
+                </div>
+
+                <div>
+                    <label nzRequired nzFor="Number">Numero</label>
+                    <nz-form-control nzErrorTip="Preencha o Número!">
+                        <input formControlName="Number" type="text" id="Number" placeholder="Insira o número da Loja">
+                    </nz-form-control>
+                </div>
+
+                <div>
+                    <label nzRequired nzFor="Complement">Complemento</label>
+                    <nz-form-control nzErrorTip="Preencha o Complemento">
+                        <input formControlName="Complement" type="text" id="Complement"
+                            placeholder="Adicione complemento">
+                    </nz-form-control>
+                </div>
+                <div>
+                    <label nzRequired nzFor="Phone">Contato</label>
+                    <nz-form-control nzErrorTip="Preencha o Contato!">
+                        <input formControlName="Phone" type="text" id="Phone" placeholder="XXXXX-XXXX">
+                    </nz-form-control>
+                </div>
+                <div>
+                    <label nzRequired nzFor="Cpf">CPF</label>
+                    <nz-form-control nzErrorTip="Preencha o CPF!">
+                        <input formControlName="Cpf" type="text" id="Cpf" placeholder="Insira CPF do Lojista">
+                    </nz-form-control>
+                </div>
+                <div>
+                    <label nzRequired nzFor="Cnpj">CNPJ</label>
+                    <nz-form-control nzErrorTip="Preencha o CNPJ!">
+                        <input formControlName="Cnpj" type="text" id="Cnpj" placeholder="Insira CNPJ do Lojista">
+                    </nz-form-control>
+                </div>
+
+                <div class="justify-center">
+                    <button nz-button nzType="primary" id="button">Cadastrar Loja</button>
+                </div>
+            </div>
+        </form>
+    </div>

@@ -1,0 +1,84 @@
+<div class="flex flex-col items-center justify-self-center w-full mr-8">
+    <div class="login-container text-left mt-12 p-8 justify-center w-screen lg:w-[400px]">
+        <div class="login-title items-center flex">
+            <i class="las la-credit-card la-3x mr-4"></i>
+            <h2 class="login-text text-3xl text-[#B35FD0]">Inserir cartão</h2>
+        </div>
+
+        <form  [formGroup]="formGroup" class="login-form flex flex-col mt-10"   >
+            
+            <div class="input_box">   
+                 <!-- <label class="user-cpf-name" for="user-cpf">Nome presente no cartão:</label> -->
+                <!-- <input type="text" id="user-cpf" formControlName="name" required> -->
+                <nz-form-control nzErrorTip="Nome presente no cartão">
+                    <label class="user-cpf-name" for="user-cpf">Nome presente no cartão:</label>
+                    <input formControlName="namePayment" type="text" id="user-cpf" name="nameP"  placeholder="Insira seu nome">
+                    </nz-form-control>
+            </div>
+           
+           
+            <div class="input_box"> 
+                <!-- <label class="card-name-write" for="card-name">CPF:</label>
+                <input type="text" id="card-name" formControlName="cpf" required>  -->
+               
+                <nz-form-control nzErrorTip="Preencha o CPF!">
+                <label class="card-name-write" for="card-name">CPF:</label>
+                    <input formControlName="cpfP" type="text" id="card-name" name="cpfP"  placeholder="Insira seu CPF">
+                    </nz-form-control>
+             </div> 
+             
+             <div class="input_box">   
+                <!-- <label class="card-number-write" for="card-number">Número Cartão:</label>
+                <input type="text" id="card-number" formControlName="numbercard" required>  -->
+                <nz-form-control nzErrorTip="Insira o cartão!">
+                <label class="card-number-write" for="card-number">Número Cartão:</label>
+                    <input formControlName="numbercard" type="text" id="user-cpf" name="numberP"  placeholder="Insira seu Cartão">
+                    </nz-form-control>
+            </div>
+            
+            <div class="input_box">  <label class="card-cvv-write" for="card-cvv">CVV:</label>
+                <!-- <input type="text" id="card-cvv" formControlName="cvv" required>  -->
+                <nz-form-control nzErrorTip="Insira o CVV!">
+                <label class="card-cvv-write" for="card-cvv"></label>
+                    <input formControlName="cvv" type="text" id="card-cvv" name="cardP"  placeholder="Insira o CVV">
+                    </nz-form-control>
+            </div>
+           
+            <label class="card-cvv-write" for="card-cvv">Data de vencimento:</label>
+            <div  class=" input_box  flex flex-row justify-between items-center" >
+                <span class="flex flex-col mt-5">
+                    <nz-form-control nzErrorTip="Insira o Mês!">
+                    <label for="expiring-date-month">Mês:</label>
+                    
+                    <select id="expiring-date-month" class="text-xl font-bold justify-text-center bg-[#cccccc67] px-[16px] py-[19px] my-2 rounded-lg appearance-none" formControlName="expiringmonth" name="monthP" >
+                         <option value="Janeiro">Janeiro</option>
+                        <option value="Fevereiro">Fevereiro</option>
+                        <option value="Março">Março</option>
+                        <option value="Abril">Abril</option>
+                        <option value="Maio">Maio</option>
+                        <option value="Junho">Junho</option>
+                        <option value="Julho">Julho</option>
+                        <option value="Agosto">Agosto</option>
+                        <option value="Setembro">Setembro</option>
+                        <option value="Outubro">Outubro</option>
+                        <option value="Novembro">Novembro</option>
+                        <option value="Dezembro">Dezembro</option>
+                    </select> 
+                </nz-form-control>
+                </span>
+               
+               <div class="input_box">  
+                <nz-form-control nzErrorTip="Insira o ano!">
+                <span class="flex flex-col">
+                <label for="expiring-date-year">Ano (4 dígitos):</label>
+                <input class="" type="text" id="expiring-date-year" formControlName="expiringdate" required>
+                     </span> 
+                    </nz-form-control>
+                </div>
+                
+            </div>
+            
+            <button class="btn-box" nz-button nzType="primary" (click)="submit()" id="register-button">Registrar</button>
+        </form>
+    </div>
+</div>

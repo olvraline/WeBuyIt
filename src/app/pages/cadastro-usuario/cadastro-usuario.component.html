@@ -1,0 +1,53 @@
+<div id="formulário">
+    <div id="title-cadastro">
+        <h1 class="text-color-[#B35FD0]">Cadastro de Usuário</h1>
+    </div>
+    <form id="form1" [formGroup]="formGroup">
+        <div>
+            <div>
+                <label nzRequired nzFor="nome" class="w-80">Nome Completo</label>
+                <nz-form-control nzErrorTip="Preencha o nome!">
+                    <input formControlName="name" type="text" id="nome">
+                </nz-form-control>
+            </div>
+            <div>
+                <label nzRequired nzFor="birthDate">Data de nascimento</label>
+                <nz-form-control nzErrorTip="Preencha a data de nascimento!">
+                    <input formControlName="birthDate" type="date" id="data">
+                </nz-form-control>
+            </div>
+            <div>
+                <div class="flex justify-between items-center">
+                    <label nzRequired nzFor="cep">CEP</label>
+                    <a id="buscar-cep" href="https://buscacepinter.correios.com.br/app/endereco/index.php">Não sei meu
+                        CEP</a>
+                </div>
+                <nz-form-control nzErrorTip="Preencha o campo CEP!">
+                    <input formControlName="cep" type="text" id="cep" placeholder="XXXXX-XXX">
+                </nz-form-control>
+            </div>
+            <div>
+                <label nzRequired nzFor="phone">Telefone</label>
+                <nz-form-control nzErrorTip="Preencha o campo telefone!">
+                    <input formControlName="phone" type="text" id="telefone" placeholder="+55 (XX) XXXXX-XXXX">
+                </nz-form-control>
+            </div>
+            <div>
+                <label nzRequired nzFor="email">E-mail</label>
+                <nz-form-control nzErrorTip="Preencha o campo email!">
+                    <input formControlName="email" type="text" id="email">
+                </nz-form-control>
+            </div>
+            <div>
+                <label nzRequired nzFor="password">Senha</label>
+                <nz-form-control nzErrorTip="Preencha a senha!">
+                    <input formControlName="password" type="password" id="password">
+                </nz-form-control>
+            </div>
+            <div class="justify-center">
+                <button nz-button nzType="primary" (click)="submit()" id="button-continuar">Continuar</button>
+            </div>
+
+        </div>
+    </form>
+</div>

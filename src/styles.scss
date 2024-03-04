@@ -1,0 +1,80 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@font-face {
+	font-family: "Hammersmith One"; 
+	src: url(./assets/font/HammersmithOne-Regular.ttf);
+}
+
+* {
+	font-family: "Hammersmith One";
+}
+
+/* Estilo Botão das Categorias */
+.mat-button-toggle-group-appearance-standard .mat-button-toggle-appearance-standard+.mat-button-toggle-appearance-standard{
+	border-left: 0!important;
+}
+
+.mat-button-toggle-standalone.mat-button-toggle-appearance-standard:not([class*=mat-elevation-z]), .mat-button-toggle-group-appearance-standard:not([class*=mat-elevation-z]){
+	border: 0!important;
+
+}
+
+.mat-button-toggle-appearance-standard.mat-button-toggle-checked {
+	background-color: #ff0000!important;
+	color:#ffffff !important;
+}
+
+.mat-button-toggle-appearance-standard {
+	background-color: #ccc!important;
+	border-radius: 1px;
+}
+.mat-button-toggle-appearance-standard .mat-button-toggle-label-content{
+	padding: 5px!important;
+}
