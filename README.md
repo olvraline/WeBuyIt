@@ -1,5 +1,11 @@
 # WeBuyItFrontEnd
 
+We Buy It surgiu como um projeto de final de curso com intuito de dar visibilidade ao pequeno empreendedor. 
+Com sistema de voluntariado onde as pessoas dispostas a comprar aquele determinado produto se candidatam. 
+Ao fechar a quantia setada pelo lojista o consumidor consegue o seu produto com desconto. 
+
+Este projeto foi desenvolvido para o projeto integrador no final do curso Entra21 efetuado pela executora Blusoft.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.8.
 
 ## Development server
